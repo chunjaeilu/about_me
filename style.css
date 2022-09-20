@@ -1,0 +1,78 @@
+#wrap {
+    position: absolute;
+    left: 10%;
+    width: 1400px;
+    height: 100%;
+    margin:10px;
+}
+aside {
+    width:200px;
+    height: 1000px;
+    background: #eee;
+    padding: 20px;
+    float: left;
+    overflow: auto;
+}
+#namecard {
+    position: relative;
+    top: 100px;
+    width: 200px;
+    height: 200px;
+    background: none;
+    text-align: center;
+}
+#detail {
+    position: relative;
+    top: 200px;
+    text-align: center;
+}
+#header {
+    position: relative;
+    left: 260px;
+    float: top;
+    width: 1065px;
+    height: 100px;
+    background-color: none;
+    text-align: right;
+    line-height: 100px;
+    padding: 0px 40px;
+    text-decoration: none;
+    color: black;
+    border-bottom:1px dotted #222;
+}
+#main_ab {
+    position:relative;
+    top: 70px;
+    text-align: left;
+    float: right;
+}
+#main {
+    position:relative;
+    top: 70px;
+    text-align: center;
+    float: right;
+}
+section {
+    width: 1000px;
+    padding:10px;
+    border-bottom:1px dotted #222;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 600px;
+    text-align: center;
+    font-size: 0.8em;
+}
+th, td {
+    border: 1px solid #ccc;
+    padding: 5px;
+    font-size: 0.9em;
+}
+thead {
+    background-color: #eee;
+}
