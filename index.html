@@ -1,18 +1,146 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        #container {
+            position: absolute;
+            left:10%;
+            background:none;
+            width: 1200px;
+            height: 100%;
+            margin: 0px;
+        }
+        aside {
+            width:200px;
+            height: 100%;
+            background: #eee;
+            padding: 20px;
+            float:left;
+            overflow: auto;
+        }
+        #namecard {
+            position: relative;
+            top: 60px;
+            width: 200px;
+            height: 200px;
+            background: none;
+            text-align: center;
+        }
+        #detail {
+            position: relative;
+            top: 150px;
+            text-align: center;
+        }
+        #main {
+            float : left;
+            width: 900px;
+            height: 100%;
+            padding: 20px;
+            background: white;
+            overflow:auto;
+        }
+        section {
+            width:700px;
+            margin:20px;
+            padding:10px;
+            border-bottom:1px dotted #222;
+        }
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+            width: 70%;
+            text-align: center;
+        }
+        thead {
+            background-color: #eee;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 5px;
+            font-size: 0.9em;
+        }
+    </style>
 </head>
 <body>
-    <figure style="float:left">
-        <img src="./images/cosmos.jpg" alt="cosmos" width="200">
-        <figcaption style="text-align:center; font-size: 0.8em;"> 내부경로로 불러오기</figcaption>
-    </figure>
-    <figure style="float:left">
-        <img src="https://thumbs.dreamstime.com/b/pink-cosmos-flower-leaf-drawing-illustration-line-art-white-backgrounds-179371168.jpg" alt="cosmos" width="200">
-        <figcaption style="text-align:center; font-size: 0.8em;"> 외부경로로 불러오기</figcaption>
+    <div id="container">
+        <!-- 사이드바 -->
+        <aside>
+            <div id="namecard">
+                <img src="./images/Favimg1.png" alt="favicon" width="100">
+                <h3>MINSU KIM</h3>
+                <p>Hello World!</p>
+            </div>
+            <div id="detail">
+                <p>Anyang, Gyeonggi, Korea</p>
+                <p>chunjaeilu@naver.com </p>
+            </div>
+        </aside>
+        <div id="main">
+            <!-- 자기소개 -->
+            <section>
+                <h2>Who am I?</h2>
+                <p><mark>프론트엔드 웹 기술(Front-end Web Tech)</mark>에 관심이 많습니다. 현재 안양 그린컴퓨터아트학원 <strong>UX/UI 프론트엔드 웹 과정</strong>에서 열심히 공부하고 있습니다. 응원해 주세요. </p>
+            </section>
+            <!-- 직무능력/경력 -->
+            <section>
+                <h2>직무능력</h2>
+                <h3>코딩</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                    <li>jQuery</li>
+                    <li>REACT</li>
+                    <li>Github</li>
+                </ul>
+                <h3>디자인</h3>
+                <ul>
+                    <li>FIGMA</li>
+                    <li>Photoshop</li>
+                    <li>Illustrator</li>
+                </ul>
+            </section>
+            <!-- 작품소개 -->
+            <section>
+                <h2>작품소개</h2>
+                <p>준비중입니다. 기대해 주세요. </p>
+            </section>
+            <!-- 학력사항 -->
+            <section>
+                <h2>Education</h2>
+                <table>
+                    <caption>학력 사항</caption>
+                    <thead>
+                        <tr>
+                            <th>출신학교</th>
+                            <th>전공</th>
+                            <th>기간</th>
+                            <th>구분</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td>ㅁㅁ대학교</td>
+                        <td>컴퓨터공학</td>
+                        <td>2004.3~2008.2</td>
+                        <td>졸업</td> 
+                    </tr>
+                    <tr>
+                        <td>ㅇㅇㅇ고등학교</td>
+                        <td>-</td>
+                        <td>2001.3~2004.2</td>
+                        <td>졸업</td> 
+                    </tr>
+                </table>
+            </section>
+        </div>
+    </div>
 </body>
 </html>
